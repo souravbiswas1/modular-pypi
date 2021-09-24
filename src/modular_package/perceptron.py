@@ -22,8 +22,8 @@ class Perceptron:
     logging.info(f"X with bias: \n{X_with_bias}")
 
     # tqdm generates the progress bar
-    # for epoch in tqdm(range(self.epochs), total=self.epochs, desc="Training the model"):
-    for epoch in range(self.epochs):
+    for epoch in tqdm(range(self.epochs), total=self.epochs, desc="Training the model"):
+    # for epoch in range(self.epochs):
       logging.info("--"*10)
       logging.info(f"for epoch: {epoch}")
       logging.info("--"*10)
